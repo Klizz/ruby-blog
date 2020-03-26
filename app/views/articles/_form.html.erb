@@ -1,3 +1,4 @@
+<div class="row">
 <%= form_with(model: article, local: true) do |form| %>
   <% if article.errors.any? %>
     <div id="error_explanation">
@@ -11,17 +12,22 @@
     </div>
   <% end %>
 
-  <div class="field">
+  <div class="form-group col-xl-12">
     <%= form.label :title %>
+    <br>
     <%= form.text_field :title %>
   </div>
 
-  <div class="field">
+  <div class="form-group col-xl-12">
     <%= form.label :description %>
+    <br>
     <%= form.text_area :description %>
   </div>
 
   <div class="actions">
     <%= form.submit %>
   </div>
-<% end %>
+  <% end %>
+ </div>
+  <br><br><br><br><br>
+
